@@ -1,0 +1,27 @@
+.homepage-logo img {
+	display: flex;
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+.homepage-search-bar {
+	margin-top: 25px;
+	border: 3px red;
+	
+}
+
+.homepage-search-bar input {
+	
+	text-align: center;
+	font-size: 30px;
+	color: darkgray;
+	box-shadow: 10px 10px lightblue;
+
+}
+
+.history_content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fx);
+}
