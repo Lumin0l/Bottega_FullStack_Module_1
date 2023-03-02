@@ -66,13 +66,13 @@
 		grid-row: 3;
 	}
 
-	.history_title {
+	.search_history_heading {
 		color: #2660f3;
 		margin-bottom: 3rem;
 		font-size: 1.4rem;
 	}
 
-	.history_entry {
+	.history_entries {
 		display: grid;
 		width: 66vw;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
