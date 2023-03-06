@@ -12,17 +12,23 @@ html {
 	box-sizing: inherit;
 }
 
-.container {
+	.container {
 	display: grid;
 
 	grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
 	grid-template-columns: 1fr 1fr 1fr;
-
-	margin-top: 5em;
 	justify-items: center;
-	align-items: center;
+	}
 
-	height: 100vh;
+	.container-homepage {
+		margin-top: 5em;
+		align-items: center;
+		height: 100vh;
+
+	}
+
+	.container-results {
+		margin-top: 2em;
 	}
 
 	.homepage-logo {
@@ -97,4 +103,29 @@ html {
 		width: 66vw;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 		grid-gap: 2.5rem;
+	}
+
+	/* Only Result Page */
+
+	.results-posts-wrapper {
+		grid-row: 3;
+		grid-column: 1/-1;
+		width: 66vw;
+	}
+
+	.post {
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+
+	.category {
+		color: #2660f3;
+		margin-bottom: 1.5rem;
+		font-size: 1.4rem;
+	}
+
+	.results-post-title a {
+		color: #535353;
+		text-decoration: none;
+		font-size: 1.8rem;
 	}
