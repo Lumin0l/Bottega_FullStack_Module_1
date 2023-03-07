@@ -40,19 +40,27 @@ html {
 		width: 13rem;
 	}
 
-	.homepage-search-bar {
+	.search-bar {
 		grid-column: 1/-1;
 		grid-row: 2;	
 	}
 
-	.homepage-search-bar input {
+	.search-bar input {
 		width: 66vw;
-		height: 11.8rem; /* rem = root em. No se hereda, si el default HTML es 16px, 1rem siempre va a ser 16px */
 		padding-left: 0.75em; /* viene heredada de elementos superiores, de la anterior vez que se usa font-size. El predeterminado suele ser 16px */
-
 	}
 
-	.homepage-search-bar input[type="text"] {
+	.homepage-search-bar input {
+		height: 11.8rem; /* rem = root em. No se hereda, si el default HTML es 16px, 1rem siempre va a ser 16px */
+	}
+
+	.results-search-bar input {
+		height: 5rem;
+		margin-bottom: 1em;
+		margin-top: 3em;
+	}
+
+	.search-bar input[type="text"] {
 		font-size: 2.5em;
 		font-family: "Font Awesome\ 5 Free", Arial, Helvetica, sans-serif;
 		font-weight: 600; /* Negrita */
@@ -62,13 +70,13 @@ html {
 		border-radius: 0.5rem;
 	}
 
-	.homepage-search-bar input[type="text"]::placeholder {
+	.search-bar input[type="text"]::placeholder {
 		font-family: "Font Awesome\ 5 Free", Arial, Helvetica, sans-serif;
 		font-weight: 600;
 		color: #a4a4a4;
 	}
 
-	.homepage-search-bar input[type="text"]:focus {
+	.search-bar input[type="text"]:focus {
 		outline: none;
 		box-shadow: 2px 3px 30px 1px rgba(0, 0, 0, 0.3);
 	}
@@ -129,3 +137,33 @@ html {
 		text-decoration: none;
 		font-size: 1.8rem;
 	}
+
+	.result-post-link-wrapper {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.result-post-link {
+		color: #535353;
+		text-decoration: none;
+		font-size: 1.4rem;
+	}
+
+	.result-post-link:hover {
+		text-decoration: underline;
+	}
+
+	.results-logo {
+		grid-row: 1;
+		grid-column: 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.results-logo img {
+		width: 200px;
+	}
+
