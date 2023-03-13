@@ -1,0 +1,102 @@
+html {
+	font-family: 'Oxygen', sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+.navbar {
+	background-color: #390300;
+}
+
+.navbar div { /* This will affect all "div" type INSIDE navbar */
+	display: none;
+
+}
+
+.navbar .toggle,
+.navbar .brand {
+	display: inline-block; /* Gives nice default values*/
+}
+
+.navbar .link { /* They are going to be flex "items", not containers. The container will manipulate them using flex. */
+	display: block;
+	text-align: center;
+	padding: 1em;
+	text-decoration: none;
+	background-color: #c4ad9f;
+	color: #1c191a;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+	background-color: #1c191a;
+	color: #c4ad9f;
+}
+
+.navbar .brand {
+	width: 10em;
+	text-align: center;
+	padding: 1em;
+	color: #c4ad9f;
+}
+
+.navbar a {
+	text-decoration: none;
+}
+
+.navbar .toggle {
+	padding: 1em;
+	color: #c4ad9f;
+}
+
+@media (min-width: 48em) {
+	.navbar {
+		display: flex;
+	}
+
+	.navbar div {
+		display: flex;
+	}
+
+	.navbar .left,
+	.navbar .right {
+		display: flex;
+		flex: 1;
+	}
+
+	.navbar .link {
+		width: auto;
+	}
+
+	.navbar .right {
+		justify-content: flex-end;
+	}
+
+	.navbar .toggle {
+		display: none;
+	}
+}
+
+@media (min-width: 48em) {
+	.navbar div {
+		display: flex;
+	}
+}
+
+@media (max-width: 48em) { /* Media queries create kindof "if" statements */
+	.navbar.active .toggle {
+		background-color: #1c191a;
+		color: #c4ad9f;
+	}
+
+	.navbar .brand {
+		text-align: left;
+	}
+
+	.navbar.active div {
+		display: block;
+	}
+
+}

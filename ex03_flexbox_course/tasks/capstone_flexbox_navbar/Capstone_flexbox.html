@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/d041a5ab54.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Capstone_flexbox_style.css"> 
+	<title>Capstone Flexbox</title>
+</head>
+<body>
+	<div class="navbar">
+		<a href="#" class="toggle" id="navHamburger">
+			<i class="fa-solid fa-bars"></i>
+		</a>
+		<a href="#" class="brand">MyName</a>
+
+		<div class="left">
+			<a href="#" class="link">Link 1</a>
+			<a href="#" class="link">Link 2</a>
+		</div>
+
+		<div class="right">
+			<a href="#" class="link">Link 3</a>
+		</div>
+
+	</div>
+	
+</body>
+
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+
+</html>
